@@ -1,0 +1,334 @@
+@import url(css/reset.css);
+@import url(css/typography.css);
+@import url(css/navigation.css);
+
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {
+  font-family: tahoma;
+  padding:0;
+  margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header i {
+  
+}
+div > h2:after {
+  display: block;
+  margin: 1rem auto 2rem auto;
+  width: 5rem;
+  height: 0.15rem;
+  content:'';
+  background: #333;
+}
+h2 {
+  text-align: center;
+}
+
+/*HOME*/
+
+header .site-branding {
+  text-align: center;
+  color: #000;
+  padding: 1rem;
+  display: flex;
+ align-items: center;
+}
+header .site-branding .site-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2.2em;
+  padding: 0;
+}
+header .site-branding .site-description {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+header .site-branding p {
+  font-size: 12px;
+  padding: 0;
+}
+header .site-branding i {
+  font-size: 4em;
+  color: #6EB8BD;
+}
+
+i.fas.fa-bars {
+  font-size: 4em;
+  padding: 2rem;
+}
+
+.wrapper-home {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/bg-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.wrapper-home img {
+}
+.home-text {
+  text-align: center; 
+  position: relative;
+}
+.home-text h1 {
+  /*font-size: 65px;*/
+  color: #000;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+.home-text p {
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1.5em;
+  color: #000;  
+
+}
+
+/*INFO*/
+
+.wrapper-info {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  vertical-align: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.info {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 0 0;
+}
+.info-text {
+  width: 60%;
+  padding: 5rem;
+}
+.info-div {
+  width: 40%;
+}
+.info-img {
+  width: auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/*HISTORY*/
+
+.wrapper-history {
+  width: 100vw;
+  height: 120vh;
+  background-image: url(images/history.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+}
+.history {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+}
+.history-text {
+  padding: 5rem;
+  background: #fff;
+}
+
+
+/*HUTS*/
+
+.wrapper-huts {
+  width: 100vw;
+  height: 150vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.huts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0 0 0;
+}
+.huts-text {
+  width: 60%;
+  padding: 0 5rem;
+}
+.huts-div {
+  width: 40%;
+  overflow: hidden;
+}
+.huts-img {
+  width: auto;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*HUT TABLES*/
+
+.huts-tables {
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/hut-table-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.huts-tables-text {
+  width: 80%;
+  padding: 5rem;
+}
+
+
+/*CITATION*/
+
+.wrapper-citation {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/citation.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.citation-text {
+  margin-top: -8rem;
+  margin-right: 2rem;
+  width: 50%;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 1.8em;
+}
+
+
+
+/*FOOTER*/
+
+.site-footer .wrapper{ 
+  padding: 2rem;
+  box-shadow: 0 0 2rem 0.1rem rgba(0,0,0,0.3);
+}
+.site-footer ul{
+  margin:0;
+  padding:0;
+}
+.site-footer li{
+  list-style: none outside;
+  display:block;
+}
+.site-footer a {
+  text-decoration: none;
+  color: #000;
+}
+.site-footer a:hover {
+  color: purple;
+}
+.site-footer .about{
+  flex: 0 0 30%;
+  margin: 0;
+  padding: 2rem;
+}
+.site-footer .about p {
+  font-family: 'Sedgwick Ave', cursive;
+  padding-left: 5.5rem;
+}
+.site-footer .contacts li i{
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 800px){
+  .site-footer .wrapper{
+  display: flex;
+  justify-content: space-between;
+  }
+
+}
+.site-footer .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {  }
+
+
+@media screen and (max-width: 600px) { 
+  /*INFO*/
+
+.info {
+  width: 100%;
+}
+.info-text,
+.history-text,
+.huts-text,
+.huts-tables-text {
+  width: 70%;
+  padding: 2rem;
+}
+.info-div {
+  width: 30%;
+}
+.history {
+  width: 80vw;
+}
+.history-text {
+  width: 100%;
+  margin: 0 auto;
+}
+.site-footer .wrapper {
+  padding: 5rem;
+}
+
+ }
+
+
+
+
+/*WHAT YOY NEED*/
+
+.wrapper-what-you-need {
+ 
+  background-image: url(images/equipment-1.jpg);
+  background-size: cover;
+
+  
+}
+main.page {
+   width: 50%;
+  margin: 0 auto;
+}
+
+

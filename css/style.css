@@ -1,0 +1,44 @@
+@import url(resset.css);
+@import url(typography.css);
+@import url(navigation.css);
+
+
+body {
+  font-family: tahoma;
+  padding:0;
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+  color: #212121;
+}
+p {
+  font-family: adventure;
+  font-size: 22px;
+  color: #FFF;  
+  margin-bottom: 25rem;
+  padding: 2rem;
+}
+
+div.wrapper-home {
+  height: 100vh;
+  background-image: url("images/bg.jpg");
+/*  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;*/
+  /*background: red;*/
+ 
+}
+
+
+.main ul i {
+  font-size: 45px;
+  color: white;
+  padding: 0 2rem;
+}
+.home-text {
+  text-align: center; 
+  position: relative;
+}
+
+

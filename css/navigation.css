@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+nav.main ul {
+  font-family: 'Concert One', cursive;
+  font-size: 16px;
+  /*background-color: #FFDBC1;*/
+  padding: 0;
+  margin:0;
+}
+nav.main > ul {
+  display: flex;
+}
+nav.main li {
+  display: block;
+  border: 10px solid transparent;
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem;
+}
+nav ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+nav ul li:last-child {
+  padding-right: 3rem;
+}
+
+nav.main ul li:hover {
+   /* background-color: #828282;*/
+   /* border-top: 10px solid #828282;
+    border-bottom: 10px solid #828282;*/
+/*    box-shadow: 0 0 5rem 0 rgba(0, 0, 0, 5);*/
+    
+}
+nav.main ul li a:hover {
+  color: #6EB8BD;
+}
+#main-nav-toggle {
+  display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  
+}
+
+
+@media screen and (min-width: 800px) {
+  #toggle {display:none;}
+
+  nav.main li:hover > ul {
+  opacity: 1;
+  pointer-events: inherit;
+  transform: translateY(0);
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #toggle {
+    display: flex;
+  }
+  nav.main {
+    display:none;
+    border-top: 2px solid #000;
+    margin-top: 1rem;
+  }
+  nav.main ul { display: block; }
+  nav.main ul ul {
+    opacity: 1;
+    pointer-events: inherit;
+    width: auto;
+    position: static;
+    transform: translate(0,0);
+    padding: 0.5rem;
+  }
+  nav.main ul li {
+  text-align: center;
+  
+  }
+  nav.main ul li a {
+    
+    
+  }
+
+  nav.main ul ul a {
+    background: #CCC;
+    color: #000;
+  } 
+  nav.main ul li:not(:last-child) {padding: 0 0 0.5rem 0;}
+  #main-nav-toggle:checked + header nav.main { 
+    display: block; 
+    flex: 1 0 100%;
+  }
+  .fas .fa-bars {
+  size: 10rem;
+  }
+}
+/*  #main-nav-toggle:checked + header #toglle .fa-times {
+    display: block;
+  }*/
+  
+/*  #main-nav-toggle:checked + header #toglle {
+    display: none;
+  }*/
+ }
+
+@media screen and (min-width: 1300px) {
+
+ }
+@media screen and (min-width: 1800px) { 
+
+}
