@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mountains and I</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -14,7 +16,7 @@
 	
 	<div class="wrapper-home">
 
-		<input type="checkbox" name="main-nav-toggle" id="main-nav-toggle">
+		
 		<header class="site-header">
 			
 			<div class="site-branding">
@@ -26,20 +28,36 @@
 				
 			</div>
 
-			<label for="main-nav-toggle" id="toggle">
-				<i class="fas fa-bars"></i>
-			</label>
-
-			<nav class="navigation main">
-				<ul>
-					<li><a href="#info">Info</a></li>
-					<li><a href="#history">History</a></li>
-					<li><a href="#huts">Huts</a></li>
-					<li><a href="#sights">Sights</a></li>
-					<li><a href="#">Routes</a></li>
-					<li><a href="#">Gallery</a></li>
-				</ul>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#!"></a>
+			  
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				  <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#info">Info <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#history">History</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#huts">Huts</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#!">Sights</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#!">Routes</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#!">Gallery</a>
+					  </li>
+				  </ul>
+				</div>
 			</nav>
+
 		</header>
 
 		<div class="home-text">
@@ -234,6 +252,15 @@
 			</section>
 		</div>
 	</footer>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+
 
 </body>
 </html>

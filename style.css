@@ -7,61 +7,62 @@
 
 body {
   font-family: tahoma;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-header i {
-  
+
+.navbar {
+  justify-content: flex-end !important;
 }
-div > h2:after {
+
+div>h2:after {
   display: block;
   margin: 1rem auto 2rem auto;
   width: 5rem;
   height: 0.15rem;
-  content:'';
+  content: '';
   background: #333;
 }
+
 h2 {
   text-align: center;
 }
 
-/*HOME*/
+/*----------------------HOME----------------------*/
 
 header .site-branding {
   text-align: center;
   color: #000;
   padding: 1rem;
   display: flex;
- align-items: center;
 }
+
 header .site-branding .site-title {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2.2em;
   padding: 0;
 }
+
 header .site-branding .site-description {
   font-family: 'Sedgwick Ave', cursive;
   font-size: 1em;
   padding: 0;
   margin: 0;
 }
+
 header .site-branding p {
   font-size: 12px;
   padding: 0;
 }
+
 header .site-branding i {
   font-size: 4em;
   color: #6EB8BD;
-}
-
-i.fas.fa-bars {
-  font-size: 4em;
-  padding: 2rem;
 }
 
 .wrapper-home {
@@ -70,28 +71,29 @@ i.fas.fa-bars {
   background-image: url("images/bg-1.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
 }
-.wrapper-home img {
-}
+
+.wrapper-home img {}
+
 .home-text {
-  text-align: center; 
+  text-align: center;
   position: relative;
 }
+
 .home-text h1 {
-  /*font-size: 65px;*/
   color: #000;
   font-weight: bold;
   padding-top: 2rem;
 }
+
 .home-text p {
   font-family: 'Sedgwick Ave', cursive;
   font-size: 1.5em;
-  color: #000;  
-
+  color: #000;
 }
 
-/*INFO*/
+/*----------------------INFO----------------------*/
 
 .wrapper-info {
   width: 100vw;
@@ -102,6 +104,7 @@ i.fas.fa-bars {
   justify-content: flex-end;
   overflow: hidden;
 }
+
 .info {
   width: 90%;
   display: flex;
@@ -109,23 +112,24 @@ i.fas.fa-bars {
   align-items: center;
   margin: 0 0 0 0;
 }
+
 .info-text {
   width: 60%;
   padding: 5rem;
 }
+
 .info-div {
   width: 40%;
 }
+
 .info-img {
   width: auto;
   height: 100vh;
   margin: 0;
   padding: 0;
-
 }
 
-
-/*HISTORY*/
+/*----------------------HISTORY----------------------*/
 
 .wrapper-history {
   width: 100vw;
@@ -133,25 +137,25 @@ i.fas.fa-bars {
   background-image: url(images/history.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   display: flex;
   align-items: bottom;
   justify-content: center;
 }
+
 .history {
   width: 60%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-
 }
+
 .history-text {
   padding: 5rem;
   background: #fff;
 }
 
-
-/*HUTS*/
+/*----------------------HUTS----------------------*/
 
 .wrapper-huts {
   width: 100vw;
@@ -162,6 +166,7 @@ i.fas.fa-bars {
   justify-content: flex-start;
   overflow: hidden;
 }
+
 .huts {
   width: 100%;
   display: flex;
@@ -169,14 +174,17 @@ i.fas.fa-bars {
   justify-content: flex-end;
   margin: 0 0 0 0;
 }
+
 .huts-text {
   width: 60%;
   padding: 0 5rem;
 }
+
 .huts-div {
   width: 40%;
   overflow: hidden;
 }
+
 .huts-img {
   width: auto;
   height: 150vh;
@@ -184,7 +192,7 @@ i.fas.fa-bars {
   padding: 0;
 }
 
-/*HUT TABLES*/
+/*----------------------HUT TABLES----------------------*/
 
 .huts-tables {
   width: 100vw;
@@ -195,15 +203,15 @@ i.fas.fa-bars {
   background-image: url(images/hut-table-2.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
 }
+
 .huts-tables-text {
   width: 80%;
   padding: 5rem;
 }
 
-
-/*CITATION*/
+/*----------------------CITATION----------------------*/
 
 .wrapper-citation {
   height: 100vh;
@@ -211,11 +219,10 @@ i.fas.fa-bars {
   background-image: url("images/citation.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 .citation-text {
@@ -227,108 +234,252 @@ i.fas.fa-bars {
 }
 
 
+/*----------------------FOOTER----------------------*/
 
-/*FOOTER*/
-
-.site-footer .wrapper{ 
+.site-footer .wrapper {
   padding: 2rem;
-  box-shadow: 0 0 2rem 0.1rem rgba(0,0,0,0.3);
+  box-shadow: 0 0 2rem 0.1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
 }
-.site-footer ul{
-  margin:0;
-  padding:0;
+.site-footer ul {
+  margin: 0;
+  padding: 0;
 }
-.site-footer li{
+.site-footer li {
   list-style: none outside;
-  display:block;
+  display: block;
 }
 .site-footer a {
   text-decoration: none;
   color: #000;
 }
 .site-footer a:hover {
-  color: purple;
+  color: #6EB8BD;
 }
-.site-footer .about{
+.site-footer .about {
   flex: 0 0 30%;
   margin: 0;
   padding: 2rem;
 }
+
 .site-footer .about p {
   font-family: 'Sedgwick Ave', cursive;
   padding-left: 5.5rem;
 }
-.site-footer .contacts li i{
+
+.site-footer .contacts li i {
   padding-right: 1rem;
 }
 
-@media screen and (min-width: 800px){
-  .site-footer .wrapper{
-  display: flex;
-  justify-content: space-between;
+
+/*----------------------@media screen----------------------*/
+
+
+@media screen and (max-width: 800px) {
+
+  .info {
+    width: 100%;
   }
 
+  .info-text,
+  .history-text,
+  .huts-text,
+  .huts-tables-text {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  .info-div {
+    width: 50%;
+  }
+
+  .info-text {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .history {
+    width: 80vw;
+  }
+
+  .history-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .site-footer .wrapper {
+    padding: 5rem;
+  }
 }
-.site-footer .content{
-  display: flex;
-  justify-content: space-between;
+
+@media screen and (max-width: 1000px) {
+  .home-text h1 {
+    padding-top: 15rem;
+  }
+  .site-footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info-text, .history-text, .huts-text, .huts-tables-text {
+    width: 90%;
+    padding: 2.5rem;
+}
 }
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 500px) {  }
-
-
-@media screen and (max-width: 600px) { 
-  /*INFO*/
-
-.info {
-  width: 100%;
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 18px;
+  }
 }
-.info-text,
-.history-text,
-.huts-text,
-.huts-tables-text {
-  width: 70%;
-  padding: 2rem;
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 23px;
+  }
 }
-.info-div {
-  width: 30%;
+ 
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .home-text h1 {
+    padding-top: 13rem;
+  }
+  .wrapper-info {
+    height: auto;
+    display: inline-block;
+  }
+  .info {
+    width: 90%;
+    display: block;
 }
-.history {
-  width: 80vw;
+  div.info-text {
+    width: 100vw;
+    padding: 2rem;
+    margin: 0;
+  }
+  div.info-div {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .info-img {
+    width: 100%;
+  }
+  .wrapper-history {
+    width: 100vw;
+    margin: 0;
 }
 .history-text {
+  padding: 3rem;
+}
+.wrapper-huts {
+  height: auto;
+}
+.huts {
+  display: inline-block;
+}
+.huts-div {
+  display: flex;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
+  height: 50vh;
+  overflow: hidden;
+}
+.huts-text {
+  width: 100%;
+  padding: 2rem;
+  margin: 0;
+}
+.huts-tables {
+  width: 100vw;
+  height: auto;
 }
 .site-footer .wrapper {
-  padding: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 }
 
- }
 
-
+/*----------------------@media screen----------------------*/
 
 
 /*WHAT YOY NEED*/
 
 .wrapper-what-you-need {
- 
+
   background-image: url(images/equipment-1.jpg);
   background-size: cover;
 
-  
+
 }
+
 main.page {
-   width: 50%;
+  width: 50%;
   margin: 0 auto;
 }
 
 
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  20% {
+    left: 0%;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+#slider figure {
+  position: relative;
+  z-index: 1;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
